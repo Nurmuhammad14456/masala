@@ -38,6 +38,21 @@ export function yigindi(a) {
   }
 }
 
+// 4 chi masala
+
+export function hisob(s) {
+  try {
+    const reverse = s.toString().split("").reverse().join("");
+    if (s.toString() === reverse) {
+      return s;
+    } else {
+      throw new Error("Error");
+    }
+  } catch (exit) {
+    return exit.message;
+  }
+}
+
 // export function es(s) {
 //   try {
 //     return a.string("").reverse().join();
